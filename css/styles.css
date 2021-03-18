@@ -2,20 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 2rem;
 }
 
 body {
-  background-image: linear-gradient(
-    89.9deg,
-    rgba(178, 253, 238, 0.96) -8.1%,
-    #cff4fe 26.3%,
-    rgba(207, 244, 254, 0.48) 47.5%,
-    rgba(254, 219, 243, 0.63) 61.5%,
-    #fedbf3 78.7%,
-    #fecfd2 109.2%
-  );
+  background-image: linear-gradient(89.9deg, rgba(178, 253, 238, 0.96) -8.1%, #cff4fe 26.3%, rgba(207, 244, 254, 0.48) 47.5%, rgba(254, 219, 243, 0.63) 61.5%, #fedbf3 78.7%, #fecfd2 109.2%);
 }
 body .material-icons {
   font-size: 2rem;
@@ -55,7 +47,7 @@ body .material-icons {
   outline: none;
   transition: 0.3s;
 }
-.main-grid div input[type='submit'] {
+.main-grid div input[type=submit] {
   width: 50%;
 }
 .main-grid div input:focus {
@@ -74,8 +66,8 @@ body .material-icons {
   height: 100vh;
   width: 100vw;
   background-color: rgba(0, 0, 0, 0.3);
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .modal {

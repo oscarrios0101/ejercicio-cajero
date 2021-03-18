@@ -1,4 +1,7 @@
 {
-  "username": "oscar",
-  "password": "admin"
+  "accounts": [
+    { "username": "John", "password": "Do545e" },
+    { "username": "Anna", "password": "asdaw88h" },
+    { "username": "oscar", "password": "admin" }
+  ]
 }

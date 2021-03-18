@@ -44,13 +44,11 @@ body {
   justify-content: center;
   padding-bottom: 1rem;
 
-  //   .grid-item:nth-last-child {
-  //     margin-top: 2rem;
-  //   }
   div {
     input {
       width: 70%;
-      border: 15px solid #aaa;
+      border: 5px solid #aaa;
+      border-radius: 15px;
       box-shadow: 0, 2px 4px rgba($color: #000000, $alpha: 0.2);
       margin: 8px 0;
       outline: none;
@@ -82,8 +80,8 @@ body {
   width: 100vw;
   background-color: rgba($color: #000000, $alpha: 0.3);
   // colocar la opacidad en cero y el pointer event none es la clave
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 0;
+  pointer-events: none;
 }
 
 // agregamos una condicion, si tiene esa clase
