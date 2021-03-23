@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+}
+
+body {
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  input {
+    max-width: 300px;
+  }
+  input[type='number'] {
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+
+  .main_wrapper {
+    margin: auto;
+    display: grid;
+    background-color: aliceblue;
+    width: 85vw;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    grid-template-areas:
+      '.    .            usuario         .           .'
+      'ayuda    .           .         .     checar_saldo'
+      'retirar .            mensaje         .     abonar_saldo'
+      '.      .            .         .           .   ';
+
+    .mensaje {
+      grid-area: mensaje;
+    }
+    .info_usario {
+      grid-area: usuario;
+    }
+    .checar_saldo {
+      grid-area: checar_saldo;
+    }
+    .retirar {
+      grid-area: retirar;
+    }
+    .abonar_saldo {
+      grid-area: abonar_saldo;
+    }
+
+    .ayuda {
+      grid-area: ayuda;
+    }
+  }
+}
+
+.btn-menu {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 25vw;
+  height: auto + 2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lavender;
+  border-radius: 5px;
+}

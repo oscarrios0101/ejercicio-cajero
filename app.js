@@ -18,7 +18,8 @@ form.addEventListener('submit', (e) => {
       return response.json();
     })
     .then(function (obj) {
-      evalPassword(obj);
+      const usernameauth = evalPassword(obj);
+      console.log(usernameauth);
     });
 });
 
@@ -32,10 +33,17 @@ function evalPassword(obj) {
       modal_container.style.opacity = '1';
       modal_container.style['pointer-events'] = 'auto';
       modal_message.innerHTML = 'Ahora tienes Acceso a mi onlyfans';
+      cambiardePagina();
     } else {
       modal_container.style.opacity = '1';
       modal_container.style['pointer-events'] = 'auto';
       modal_message.innerHTML = 'Por Favor Ingresa Una Contraseña valida';
     }
   });
+}
+
+function cambiardePagina() {
+  setTimeout(() => {
+    document.location.href = 'cajeroUI.html';
+  }, 3000);
 }

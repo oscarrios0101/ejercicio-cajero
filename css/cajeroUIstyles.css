@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+}
+
+body {
+  background: #eeaeca;
+  background: radial-gradient(circle, #eeaeca 0%, #94bbe9 100%);
+}
+body input {
+  max-width: 300px;
+}
+body input[type=number]::-webkit-inner-spin-button, body input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+body .main_wrapper {
+  margin: auto;
+  display: grid;
+  background-color: aliceblue;
+  width: 85vw;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  grid-template-areas: ".    .            usuario         .           ." "ayuda    .           .         .     checar_saldo" "retirar .            mensaje         .     abonar_saldo" ".      .            .         .           .   ";
+}
+body .main_wrapper .mensaje {
+  grid-area: mensaje;
+}
+body .main_wrapper .info_usario {
+  grid-area: usuario;
+}
+body .main_wrapper .checar_saldo {
+  grid-area: checar_saldo;
+}
+body .main_wrapper .retirar {
+  grid-area: retirar;
+}
+body .main_wrapper .abonar_saldo {
+  grid-area: abonar_saldo;
+}
+body .main_wrapper .ayuda {
+  grid-area: ayuda;
+}
+
+.btn-menu {
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  width: 25vw;
+  height: auto2vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lavender;
+  border-radius: 5px;
+}
+
+/*# sourceMappingURL=cajeroUIstyles.css.map */
