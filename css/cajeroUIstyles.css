@@ -26,7 +26,7 @@ body .main_wrapper {
   justify-items: center;
   align-items: center;
   text-align: center;
-  grid-template-areas: ".    .            usuario         .           ." "ayuda    .           .         .     checar_saldo" "retirar .            mensaje         .     abonar_saldo" ".      .            .         .           .   ";
+  grid-template-areas: ".    .            usuario         .           ." "ayuda    .           .         .     consultar_saldo" "retirar .            mensaje         .     abonar_saldo" ".      .            .         .           .   ";
 }
 body .main_wrapper .mensaje {
   grid-area: mensaje;
@@ -34,8 +34,8 @@ body .main_wrapper .mensaje {
 body .main_wrapper .info_usario {
   grid-area: usuario;
 }
-body .main_wrapper .checar_saldo {
-  grid-area: checar_saldo;
+body .main_wrapper .consultar_saldo {
+  grid-area: consultar_saldo;
 }
 body .main_wrapper .retirar {
   grid-area: retirar;
@@ -50,12 +50,16 @@ body .main_wrapper .ayuda {
 .btn-menu {
   border: 2px solid rgba(0, 0, 0, 0.5);
   width: 25vw;
-  height: auto2vh;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: lavender;
   border-radius: 5px;
+}
+
+div .mensaje input {
+  margin: 20px;
 }
 
 /*# sourceMappingURL=cajeroUIstyles.css.map */

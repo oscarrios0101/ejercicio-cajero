@@ -35,7 +35,7 @@ body {
     text-align: center;
     grid-template-areas:
       '.    .            usuario         .           .'
-      'ayuda    .           .         .     checar_saldo'
+      'ayuda    .           .         .     consultar_saldo'
       'retirar .            mensaje         .     abonar_saldo'
       '.      .            .         .           .   ';
 
@@ -45,8 +45,8 @@ body {
     .info_usario {
       grid-area: usuario;
     }
-    .checar_saldo {
-      grid-area: checar_saldo;
+    .consultar_saldo {
+      grid-area: consultar_saldo;
     }
     .retirar {
       grid-area: retirar;
@@ -64,10 +64,16 @@ body {
 .btn-menu {
   border: 2px solid rgba(0, 0, 0, 0.5);
   width: 25vw;
-  height: auto + 2vh;
+  height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: lavender;
   border-radius: 5px;
+}
+
+div .mensaje {
+  input {
+    margin: 20px;
+  }
 }

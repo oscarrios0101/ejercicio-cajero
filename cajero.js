@@ -1,36 +1,37 @@
-saldo = 1000;
-const mensaje = document.createElement('div');
-//consultar saldo
-const consultar_saldo = document.querySelector('.checar_saldo');
-//abonar saldo
-const cantidad_para_abonar = document.querySelector('#abonar').value;
-const abonar = document.querySelector('.abonar-form');
+let saldo = 1000;
 
-//empieza la funcionalidad para abonar saldo
-abonar.addEventListener('submit', (e) => {
-  e.preventDefault();
-  console.log(typeof cantidad_para_abonar);
-  saldo = saldo + parseInt(cantidad_para_abonar);
-  console.log('tu nuevo saldo es ', saldo);
-  mensaje.textContent = `tu nuevo saldo es de ${saldo}`;
-  mensaje.classList.add('mensaje');
-  mensaje.classList.add('btn-menu');
+const consultar_saldo = document.querySelector('.consultar_saldo');
+const abonar_saldo = document.querySelector('.abonar_saldo');
+let mensaje = document.createElement('div');
+mensaje.classList.add('mensaje');
+mensaje.classList.add('btn-menu');
+const item = `<form onsubmit="abonarSaldo()">
+<input type="number" id="cantidad" placeholder="cantidad" />
+<input type="submit" value="Submit" />
+</form>
+`;
+
+consultar_saldo.addEventListener('click', function (e) {
   document.querySelector('.main_wrapper').appendChild(mensaje);
-  cantidad_para_abonar = 0;
+  console.log('click');
+  mensaje.textContent = `Tu saldo es de ${saldo}`;
 });
 
-//empieza la funcionalidad para consultar saldo
-consultar_saldo.addEventListener('click', consultar);
+abonar_saldo.addEventListener('click', function (e) {
+  abonarDinero();
+  //   mensaje.insertAdjacentHTML('afterbegin', '<div id="two">two</div>');
+  //   document.querySelector('.main_wrapper').appendChild(mensaje);
+});
 
-function consultar() {
-  mensaje.textContent = `tu saldo es de ${saldo} pesos`;
-  mensaje.classList.add('mensaje');
-  mensaje.classList.add('btn-menu');
+function abonarDinero() {
+  mensaje.insertAdjacentHTML('afterbegin', item);
   document.querySelector('.main_wrapper').appendChild(mensaje);
 }
 
-// const mensaje = document.createElement('div');
-// mensaje.textContent = 'primer elemento';
-// mensaje.classList.add('mensaje');
-// mensaje.classList.add('btn-menu');
-// document.querySelector('.main_wrapper').appendChild(mensaje);
+function abonarSaldo() {
+  let valor = parseInt(document.getElementById('cantidad').value);
+
+  console.log(valor);
+  saldo = saldo + valor;
+  console.log('el valor despues de sumarlo es ', saldo);
+}
