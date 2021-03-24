@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 body {
@@ -21,7 +21,7 @@ body .main_wrapper {
   margin: auto;
   display: grid;
   background-color: lightblue;
-  width: 85vw;
+  width: 95vw;
   height: 100vh;
   justify-items: center;
   align-items: center;
@@ -51,7 +51,7 @@ body .main_wrapper .ayuda {
 .btn-menu {
   border: 2px solid rgba(0, 0, 0, 0.5);
   width: 25vw;
-  height: 300px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
