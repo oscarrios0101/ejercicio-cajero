@@ -20,7 +20,7 @@ body input[type=number]::-webkit-inner-spin-button, body input[type=number]::-we
 body .main_wrapper {
   margin: auto;
   display: grid;
-  background-color: aliceblue;
+  background-color: lightblue;
   width: 85vw;
   height: 100vh;
   justify-items: center;
@@ -30,6 +30,7 @@ body .main_wrapper {
 }
 body .main_wrapper .mensaje {
   grid-area: mensaje;
+  background-color: lightsalmon;
 }
 body .main_wrapper .info_usario {
   grid-area: usuario;
@@ -58,8 +59,8 @@ body .main_wrapper .ayuda {
   border-radius: 5px;
 }
 
-div .mensaje input {
-  margin: 20px;
+input[type=number] {
+  width: 300px;
 }
 
 /*# sourceMappingURL=cajeroUIstyles.css.map */
