@@ -6,13 +6,14 @@
   font-size: 1.5rem;
 }
 
+$primary-color: #48bfe3;
+$secondary-color: #5390d9;
+$therciary-color: #6930c3;
+$message-color: #72efdd;
+$message-font-color: #ced4da;
 body {
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(148, 187, 233, 1) 100%
-  );
+  background: $primary-color;
+
   input {
     max-width: 300px;
   }
@@ -27,7 +28,7 @@ body {
   .main_wrapper {
     margin: auto;
     display: grid;
-    background-color: lightblue;
+    background-color: $secondary-color;
     width: 95vw;
     height: 100vh;
     justify-items: center;
@@ -41,7 +42,21 @@ body {
 
     .mensaje {
       grid-area: mensaje;
-      background-color: lightsalmon;
+      background-color: $therciary-color;
+      opacity: 1;
+      animation-name: fadeIn;
+      animation-iteration-count: 1;
+      animation-timing-function: ease-in;
+      animation-duration: 0.5s;
+      color: $message-font-color;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
     .info_usario {
       grid-area: usuario;
@@ -69,7 +84,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lavender;
+  background-color: $message-color;
   border-radius: 5px;
 }
 
