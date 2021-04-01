@@ -4,7 +4,7 @@ const form = document.querySelector('#form');
 const username = document.querySelector('#username');
 const password = document.querySelector('#password');
 const modal_message = document.querySelector('.modal_message');
-
+// colo un comentario para configurar git
 close.addEventListener('click', function () {
   modal_container.style.opacity = '0';
   modal_container.style['pointer-events'] = 'none';
